@@ -155,14 +155,14 @@ def train(args: Dict):
 
     ###########################################################################################
     # load model
-    print("--"*40)
-    params = torch.load(model_save_path, map_location=lambda storage, loc: storage)
-    model.load_state_dict(params['state_dict'])
-    model = model.to(device)
+    #print("--"*40)
+    #params = torch.load(model_save_path, map_location=lambda storage, loc: storage)
+    #model.load_state_dict(params['state_dict'])
+    #model = model.to(device)
 
-    print('restore parameters of the optimizers', file=sys.stderr)
-    optimizer.load_state_dict(torch.load(model_save_path + '.optim'))
-    print("--"*40)
+    #print('restore parameters of the optimizers', file=sys.stderr)
+    #optimizer.load_state_dict(torch.load(model_save_path + '.optim'))
+    #print("--"*40)
 
     ###########################################################################################
 
